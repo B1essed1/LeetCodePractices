@@ -1,8 +1,4 @@
-import collections.SinglyLinkedList;
-import easy.*;
-import medium.FindFirstAndLastPositionOfSortedArray;
-import medium.RotateArray;
-import medium.TwoSum2;
+import old.easy.*;
 
 public class RunnerCodes {
     public static void main(String[] args) {
