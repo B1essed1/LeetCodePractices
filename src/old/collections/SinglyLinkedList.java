@@ -40,4 +40,26 @@ public class  SinglyLinkedList <T> {
         }
     }
 
+    public int findGCD(int[] nums) {
+        int maximum = 0, minimum=0;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] > maximum){
+                maximum = nums[i];
+            }
+            if(nums[i] < minimum){
+                minimum = nums[i];
+            }
+        }
+
+        while(minimum!=0){
+            int temp = minimum;
+
+            minimum = maximum % minimum ;
+            maximum = temp;
+        }
+
+        return maximum;
+
+    }
+
 }
